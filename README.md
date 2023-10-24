@@ -38,20 +38,24 @@ Welcome to the HTML Quick Start Package! This package is designed to help you ki
 
 ### The package includes the following folder structure:
 
-html-quick-start/
+```bash
+
+html-quick-journey/
 │
 ├── css/
-│ └── styles.css
-│
+│ └── bootstrap.min.css
+│ └── fontawesome.min.css
 ├── images/
-│ └── sample-image.png
+│ └── favicon.png
 │
 ├── js/
-│ └── script.js
+│ └── bootstrap.bundle.min.js
 │
 ├── index.html
-│
+├── style.css
 └── README.md
+
+```
 
 - css/: Contains the CSS file for basic styling.
 - images/: Place your project images in this folder or use the provided sample image.
