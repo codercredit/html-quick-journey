@@ -1,5 +1,7 @@
-@import "variables";
-@import "mixins";
+@import "settings/variables";
+@import "settings/mixins";
+@import "settings/functions";
+@import "settings/loops";
 @import "reset";
 @import "partials/header";
 @import "partials/footer";

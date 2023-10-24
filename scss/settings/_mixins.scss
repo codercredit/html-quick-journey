@@ -1,0 +1,32 @@
+// margin top
+@mixin margin-top($value) {
+  margin-top: calculate-value($value);
+}
+// margin bottom
+@mixin margin-bottom($value) {
+  margin-bottom: calculate-value($value);
+}
+// margin left
+@mixin margin-left($value) {
+  margin-left: calculate-value($value);
+}
+// margin left
+@mixin margin-right($value) {
+  margin-right: calculate-value($value);
+}
+// padding top
+@mixin padding-top($value) {
+  padding-top: calculate-value($value);
+}
+// padding bottom
+@mixin padding-bottom($value) {
+  padding-bottom: calculate-value($value);
+}
+// padding left
+@mixin padding-left($value) {
+  padding-left: calculate-value($value);
+}
+// padding right
+@mixin padding-right($value) {
+  padding-right: calculate-value($value);
+}
