@@ -1,0 +1,27 @@
+/* Reset margin, padding, and border on all elements */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* Remove list styles on list elements */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove text decoration on links */
+a {
+  text-decoration: none;
+}
+
+/* Reset font styles */
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Additional reset styles can be added here */

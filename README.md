@@ -58,6 +58,16 @@ html-quick-start/
 - js/: Contains a JavaScript file for interactivity (optional).
 - index.html: The main HTML file to start building your web project.
 
+# How To Use SCSS use or watch
+
+    ```bash
+
+    sass --watch "C:\Users\muham\Dropbox\Themeforest\html-quick-journey\scss\main.scss":"C:\Users\muham\Dropbox\Themeforest\html-quick-journey\style.css"
+
+    Notes: When this package download on your pc then change the file path.
+
+    ```
+
 ## Contributing
 
 We welcome contributions to make this HTML Quick Start Package even more helpful. If you have suggestions, improvements, or bug fixes, please feel free to submit a pull request.
