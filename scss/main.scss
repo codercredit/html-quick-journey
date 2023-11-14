@@ -1,9 +1,25 @@
+/**************************************
+    ***** 0.  Fonts
+    ***** 1.  Variables
+    ***** 2.  Mixins
+    ***** 3.  Reset CSS
+    ***** 4.  Default CSS
+    **************************************/
 @import "settings/variables";
-@import "settings/mixins";
+@import "settings/mixins/mixins";
+@import "settings/mixins/heading";
 @import "settings/functions";
 @import "settings/loops";
+@import "settings/responsive";
 @import "reset";
 @import "partials/header";
 @import "partials/footer";
+
+@import "components/switchDarkLight";
+
+@import "theme/themeLight";
+@import "theme/themeDark";
+
+@import "animations/animationSwitchDarkLight";
 
 /* Additional custom styles can be added here */

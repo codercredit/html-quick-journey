@@ -1,0 +1,52 @@
+// Define your base font size
+$base-font-size: 16px;
+
+// Define your modular scale ratio
+$modular-scale-ratio: 1.2;
+
+// Define your breakpoints
+$breakpoints-heading: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+
+// Function to calculate font sizes based on modular scale
+@function calc-font-size($size, $factor: 1) {
+  @return $base-font-size * $factor * pow($modular-scale-ratio, $size);
+}
+
+// Mixin to apply responsive font sizes
+@mixin responsive-font-size($property, $size, $breakpoint: null) {
+  #{$property}: calc-font-size($size);
+
+  // If a breakpoint is specified, generate media query
+  @if $breakpoint {
+    @media (min-width: map-get($breakpoints-heading, $breakpoint)) {
+      #{$property}: calc-font-size($size);
+    }
+  }
+}
+
+// Example usage
+element {
+  @include responsive-font-size(font-size, 0); // Base font size
+}
+
+element {
+  @include responsive-font-size(
+    font-size,
+    2,
+    lg
+  ); // Large heading font size on lg and above
+}
+
+element {
+  @include responsive-font-size(
+    font-size,
+    1,
+    sm
+  ); // Small paragraph font size on sm and above
+}

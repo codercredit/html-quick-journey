@@ -1,5 +1,22 @@
-:root {
-  --primary-color: #0074d9;
-  --secondary-color: #ff4136;
-  --font-family: "Arial", sans-serif;
+//all colors
+$color-bg-dark: #2e2f32;
+$color-bg-light: #e0e7f6;
+$color-switch-dark: #16171a;
+$color-switch-light: #ffffff;
+$color-text-dark: rgba(#4f545e, 0.4);
+$color-text-light: rgba(#ccd7ea, 0.8);
+$color-switch-button: #0451fb;
+
+:root,
+[data-bp-theme="light"] {
+  --bp-color--primary: #0074d9;
+  --bp-color--secondary: #ff4136;
+  --bp-color--white: #ffffff;
+  --bp-color--black: #000000;
+  --bp-color--dark: #181818;
+  --bp-font-family: "Arial", sans-serif;
+}
+
+[data-bp-theme="dark"] {
+  --bp-color--primary: #0074d9;
 }

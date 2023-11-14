@@ -66,7 +66,7 @@ html-quick-journey/
 
     ```bash
 
-    sass --watch "C:\Users\muham\Dropbox\Themeforest\html-quick-journey\scss\main.scss":"C:\Users\muham\Dropbox\Themeforest\html-quick-journey\style.css"
+    sass --watch "C:\Users\bPlugins.mehadi\Dropbox\bPlugins\html-quick-journey\scss\main.scss":"C:\Users\bPlugins.mehadi\Dropbox\bPlugins\html-quick-journey\style.css"
 
     Notes: When this package download on your pc then change the file path.
 

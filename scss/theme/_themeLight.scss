@@ -1,0 +1,20 @@
+[data-bp-theme="light"] {
+  #theme-switch {
+    background-color: $color-switch-light;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    .btn-switch {
+      right: auto;
+      left: 9%;
+      animation: animationClickOn 0.5s linear;
+    }
+
+    .icon--moon {
+      animation: rotateOn 0.7s;
+    }
+
+    .icon--sun {
+      animation: shakeOn 0.7s;
+    }
+  }
+}

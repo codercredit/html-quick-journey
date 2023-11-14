@@ -10,21 +10,30 @@
 
     <!-- Styles External -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="style.css">
     <!-- Styles External End -->
 </head>
 
-<body>
+<body id="theme-options" class="theme">
     <!-- start journey -->
-
-    <h1 class="mt-50 pl-50">Hello, HTML!</h1>
+    <main class="pxy-50">
+        <button type="button" id="theme-switch">
+            <i class="icon icon--sun fa-solid fa-sun"></i>
+            <span class="btn-switch"></span>
+            <i class="icon icon--moon fa-solid fa-moon"></i>
+        </button>
+        <h1 class="mt-50 pl-50 heading">Hello, HTML!</h1>
+    </main>
 
     <!-- end journey -->
 
     <!-- Javascript External -->
+    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="app.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="app.js" defer></script>
     <!-- Javascript External End -->
 </body>
 

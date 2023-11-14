@@ -1,0 +1,23 @@
+[data-bp-theme="dark"] {
+  #theme-switch {
+    background-color: $color-switch-dark;
+
+    .btn-switch {
+      left: auto;
+      right: 9%;
+      animation: animationClickOff 0.5s linear;
+    }
+
+    .icon--moon {
+      animation: rotateOff 0.7s;
+    }
+
+    .icon--sun {
+      animation: shakeOff 0.7s;
+    }
+  }
+  main {
+    background-color: black;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+}

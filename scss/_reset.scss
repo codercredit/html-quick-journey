@@ -25,3 +25,12 @@ body {
 }
 
 /* Additional reset styles can be added here */
+main {
+  margin: 0;
+  font-family: var(--font-family);
+  color: var(--icon-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}

@@ -1,0 +1,52 @@
+$max: 50;
+$offset: 5;
+$unit: "px"; // Feel free to change the unit.
+@mixin list-loop($className, $styleName) {
+  $i: 0;
+  @while $i <= $max {
+    #{$className + $i} {
+      #{$styleName}: #{$i + $unit};
+    }
+    $i: $i + $offset;
+  }
+}
+// Margins
+@include list-loop(".mt-", "margin-top");
+@include list-loop(".mr-", "margin-right");
+@include list-loop(".mb-", "margin-bottom");
+@include list-loop(".ml-", "margin-left");
+@include list-loop(".mxy-", "margin");
+// Paddings
+@include list-loop(".pt-", "padding-top");
+@include list-loop(".pr-", "padding-right");
+@include list-loop(".pb-", "padding-bottom");
+@include list-loop(".pl-", "padding-left");
+@include list-loop(".pxy-", "padding");
+// Terrible name for mixin by the way.
+
+// Margin mixin
+@mixin margin($top: 0, $right: 0, $bottom: 0, $left: 0) {
+  margin: $top $right $bottom $left;
+}
+
+// Padding mixin
+@mixin padding($top: 0, $right: 0, $bottom: 0, $left: 0) {
+  padding: $top $right $bottom $left;
+}
+
+// Margin and padding shorthand mixin
+@mixin space($margin: 0, $padding: 0) {
+  @include margin($margin);
+  @include padding($padding);
+}
+
+// Font Size
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}

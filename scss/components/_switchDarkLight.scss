@@ -1,0 +1,40 @@
+#theme-switch {
+  border: none;
+  width: 4vw;
+  height: 2vw;
+  border-radius: 4vw;
+  position: fixed;
+  cursor: pointer;
+  right: 0%;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg) scale(1);
+  cursor: pointer;
+
+  .btn-switch {
+    display: block;
+    background-color: $color-switch-button;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 3vw;
+    position: absolute;
+    z-index: 0;
+    top: 13.5%;
+    transition: 0.5s linear;
+  }
+
+  i {
+    font-size: 1vw;
+    position: absolute;
+    z-index: 1;
+    top: 26%;
+    color: $color-text-light;
+
+    &.icon--sun {
+      left: 15%;
+    }
+
+    &.icon--moon {
+      right: 19%;
+    }
+  }
+}
